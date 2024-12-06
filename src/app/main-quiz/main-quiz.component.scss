@@ -11,7 +11,7 @@ z-index: -1; /* Position the video behind all other content */
 }
 .container {
   position: absolute;
-  top: 1%; /* Center the content vertically */
+  top: 12.5%; /* Center the content vertically */
   left: 29%; /* Center the content horizontally */
   background-color: $white;
   width: min(680px, 100%);

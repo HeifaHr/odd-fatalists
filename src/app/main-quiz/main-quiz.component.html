@@ -1,11 +1,12 @@
-
+<div class="">
+<app-nav-bar ></app-nav-bar>
   <!-- Screen 1 (For Displaying initial Questions)-->
   <video autoplay muted loop id="video-background">
-    <source src="assets/oceanloop.mp4" type="video/mp4">
+    <source src="assets/bg.mp4" type="video/mp4">
   </video>
    <div><br></div>
   <div *ngIf="screen == 1" class="container">
-    <h1 class="heading">Quiz Corps & Océan : Qui Est Le Vrai Jumeau ?</h1>
+    <h1 class="heading">Quiz ODD 14</h1>
     <h2 class="sub-heading">Instructions</h2>
     <div class="line"></div>
     <ul class="list">
@@ -21,7 +22,7 @@
   </div>
   <!-- Screen 3 (For displaying Quiz Questions) -->
   <div *ngIf="screen == 2" class="container">
-    <h1 class="heading">Quiz Corps & Océan</h1>
+    <h1 class="heading">Quiz ODD 14</h1>
     <app-quiz (endQuiz)="endQuiz()"></app-quiz>
   </div>
   
@@ -30,5 +31,4 @@
     <h1 class="heading">Résultat</h1>
     <app-result></app-result>
   </div>
- 
-  
+</div>

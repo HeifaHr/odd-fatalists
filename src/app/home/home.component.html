@@ -1,159 +1,85 @@
-     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-           
+<app-nav-bar></app-nav-bar>
+<nav class="navbar navbar-expand-lg">
+     <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
                     <!-- <li class="nav-item">
                         <a href="contact.html" class="nav-link contact">Contact</a>
                     </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+               </ul>
+          </div>
+     </div>
+</nav>
 
 
-     <!-- HERO -->
-     <section class="hero hero-bg d-flex justify-content-center align-items-center">
-        
-               <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
-                              <div class="hero-text">
+<!-- HERO -->
+<section class="hero hero-bg d-flex justify-content-center align-items-center">
+     <div class="container">
+          <div class="row">
+               <!-- First Section -->
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+                         <h1 class="text-white hero-title" data-aos="fade-up" style="font-size: 25px;">
+                              L'ODD 14, intitulé "Vie aquatique," a pour objectif de préserver les océans, les mers et les
+                              ressources marines en les utilisant de manière durable. Il vise à réduire la pollution marine,
+                              protéger les écosystèmes marins et réguler la pêche pour maintenir la biodiversité.
+                         </h1>
+                         
+                    </div>
+               </div>
+     
+               <!-- Second Section -->
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text1">
+                         <a [routerLink]="'/flashcard'" class="nav-link smoothScroll custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">
+                              Découvrir les autres ODDs!
+                         </a>
+                         <a [routerLink]="'/quiz'" class="nav-link smoothScroll custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">
+                              Plongez et testez vos connaissances!
+                         </a>
+                    </div>
+               </div>
+     
+               <!-- Image Section -->
+               <div class="col-lg-6 col-12">
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                         <img src="/assets/images/poumon.png" class="img-fluid" alt="working girl">
+                    </div>
+               </div>
+          </div>
+     </div>
+     
+</section>
 
-                                   <h1 class="text-white" data-aos="fade-up">Explorer le lien profond entre le corps humain et l'océan, une vague à la fois.</h1>
 
-                                   <a href="#project" class="nav-link smoothScroll" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Plongez et testez vos connaissances!</a>
+<!-- ABOUT -->
+<section class="about section-padding pb-0" id="about">
+     <div class="container">
+          <div class="row">
 
-                              </div>
-                        </div>
+               <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <div class="about-info">
 
-                        <div class="col-lg-6 col-12">
-                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                         <h1 class="mb-4" data-aos="fade-up">Océan : <br><strong>L'Aventure Commence </strong>
+                         </h1>
 
-                            <img src="/assets/images/poumon.png" class="img-fluid" alt="working girl">
-                          </div>
-                        </div>
+                         <p class="mb-0" data-aos="fade-up">Les océans régulent le climat, produisent de l'oxygène et abritent une biodiversité essentielle. Ils sont vitaux pour notre planète et nos ressources.</p>
+                    </div>
+
+                    <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
                     </div>
                </div>
-     </section>
 
-
-     <!-- ABOUT -->
-     <section class="about section-padding pb-0" id="about">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-lg-7 mx-auto col-md-10 col-12">
-                         <div class="about-info">
-
-                              <h1 class="mb-4" data-aos="fade-up">Corps et Océan : <br><strong>L'Aventure Commence </strong> </h1>
-
-                              <p class="mb-0" data-aos="fade-up">Explorez les fascinantes connexions entre le corps humain et l'océan à travers des quiz, des flashcards et un jeu poadcast educatif. Apprenez en vous amusant tout en découvrant les merveilles cachées des deux mondes.</p>
-                         </div>
-
-                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
-
-                          <img src="/assets/images/office.png" class="img-fluid" alt="office">
-                        </div>
-                    </div>
-
-               </div>
           </div>
-     </section>
+     </div>
+</section>
 
 
-     <!-- PROJECT -->
-     <section class="project section-padding" id="project">
-          <div class="container-fluid">
-               <div class="row">
 
-                    <div class="col-lg-12 col-12">
+<!-- PROJECT -->
 
-                        <h2 class="mb-5 text-center" data-aos="fade-up">
-                         Essayez notre quiz , poadcast et nos flashcards !                        
-                        </h2>
-
-                         <div class="owl-carousel owl-theme" id="project-slide">
-                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
-                                   <img src="/assets/images/project/project-image01.jpg" class="img-fluid" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>Flash Cards</small>
-
-                                        <h3>
-                                             <a href="/">
-                                                  <span>Apprenez en vous amusant avec nos flashcards !</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="/assets/images/project/project-image02.JPG" class="img-fluid" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>Quiz</small>
-
-                                        <h3>
-                                             <a href="/quiz">
-                                                  <span>Testez vos connaissances avec notre quiz!</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="/assets/images/project/project-image05.jpg" class="img-fluid" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>PoadCast</small>
-
-                                        <h3>
-                                             <a href="https://wetransfer.com/downloads/779960506a660026a0087b0208b1fa9f20241204201920/556467?t_exp=1733602760&t_lsid=627bfe53-e704-4665-b2fc-04267cfa8970&t_network=link&t_rid=ZW1haWx8Njc1MGEyMWZiNjM1NTFjNmY2MzljMzZm&t_s=download_link&t_ts=1733343561">
-                                                  <span>Découvrez notre podcast !</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Merci de votre visite !  <strong>Explorez</strong>, <strong>apprenez </strong> et <strong>  plongez </strong>dans l'aventure.</h1>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-
-            <p class="mb-1">
-              <i class="fa fa-phone mr-2 footer-icon"></i> 
-            </p>
-
-            <p>
-              <a href="#">
-                <i class="fa fa-envelope mr-2 footer-icon"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
-            <p class="copyright-text">Copyright &copy; 2024 Nuit d'Info
-            <br>
-          </div>
-        </div>
-      </div>
-    </footer>
+<app-footer></app-footer>

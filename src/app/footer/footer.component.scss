@@ -1,0 +1,74 @@
+/* Style global de la page pour garantir que le footer reste en bas */
+html, body {
+    height: 100%; /* Force la hauteur de la page à être 100% */
+    margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  .page-container {
+    display: flex; /* Active Flexbox pour la disposition */
+    flex-direction: column; /* Aligne les enfants en colonne (contenu et footer) */
+    min-height: 100vh; /* La hauteur minimale du conteneur est égale à la hauteur de la fenêtre */
+  }
+  
+  .content {
+    flex-grow: 1; /* Permet à l'élément de contenu de prendre l'espace restant */
+  }
+  
+  /* Votre style actuel du footer */
+  .site-footer {
+    background-color: var(--primary-color); /* Fond bleu */
+    color: #ffffff; /* Texte blanc pour le contraste */
+    padding: 2rem 0;
+  
+    .footer-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .footer-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 0.5rem;
+  
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #cce7ff; /* Couleur bleue plus claire au survol */
+          }
+        }
+      }
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+  
+      .social-icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #cce7ff; /* Couleur bleue plus claire au survol */
+        }
+      }
+    }
+  
+    .copyright-text {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #e0e0e0; /* Texte légèrement plus clair */
+    }
+  }
+  

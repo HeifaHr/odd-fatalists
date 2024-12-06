@@ -1,0 +1,172 @@
+// Main Styles for Body and Page Layout
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+ 
+  
+  // About Section
+  .about {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  
+    .about-info {
+      max-width: 800px;
+      margin: 0 auto;
+      
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #666;
+      }
+    }
+  
+    .about-image {
+      margin-top: 30px;
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+  
+  // Project Section
+  .project {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+  
+    .project-wrapper {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 30px;
+  
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+  
+      .project-info {
+        margin-top: 20px;
+  
+        small {
+          display: block;
+          font-size: 1rem;
+          color: #999;
+        }
+  
+        h3 {
+          margin-top: 10px;
+          font-size: 1.5rem;
+  
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+  
+            i {
+              position: absolute;
+              right: -20px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+  
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Footer Styling
+  /* Style for hero title */
+.hero-title {
+    font-size: 1.5rem; /* Default size for smaller screens */
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Larger font size for medium and larger screens */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 2rem; /* Medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem; /* Large screens */
+    }
+}
+
+  
+    
+  // Add Smooth Scroll to Anchor Links
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  // Animations for Fade-in Effect
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+  
+    
+  
+    .about-info p {
+      font-size: 0.9rem;
+    }
+  
+    .project-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: 60vh;
+    }
+  
+    .hero-text h1 {
+      font-size: 0.5rem;
+    }
+  
+    .about-info {
+      padding: 0 10px;
+    }
+  
+    .project-wrapper {
+      padding: 15px;
+    }
+  }
+  
